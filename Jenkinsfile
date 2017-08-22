@@ -1,3 +1,4 @@
 node {
-    docker container run -p 8888:5000 --name myfirstapp YOUR_USERNAME/myfirstapp
+    docker image build -t sshuang/myfirstapp .
+    docker container run -p 8888:5000 --name myfirstapp sshuang/myfirstapp
 }
